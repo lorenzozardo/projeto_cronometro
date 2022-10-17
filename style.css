@@ -1,11 +1,47 @@
 body{
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+.navbar_header{
+    display: inline-block;
+    width: 193vh;
+    height: 50px;
+    padding: 10px 50px;
+    background-color: rgb(53, 53, 53);
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.navbar_item a{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    text-transform: none;
+    margin-right: 35px;
+    color: #fff;
+}
+
+.navbar_item a:hover{
+    color: rgb(191, 131, 0);
+}
+
 .cronometro{
     text-align: center;
-    margin: 40px;
+    margin: 20px;
     border-radius: 20px;
     border: 3px solid black;
+}
+.botao-contagem{
+    background-color: rgb(188, 107, 0);
 }
 #watch{
     font-size: 120px;

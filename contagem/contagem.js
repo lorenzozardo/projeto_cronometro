@@ -1,24 +1,32 @@
-const diasE1 = document.getElementById("dias");
-const horasE1 = document.getElementById("horas");
-const minsE1 = document.getElementById("minutos");
-const segundosE1 = document.getElementById("segundos");
+const daysE1 = document.getElementById("days");
+const hoursE1 = document.getElementById("hours");
+const minsE1 = document.getElementById("mins");
+const secondsE1 = document.getElementById("seconds");
 
 const minYears = "1 Jan 2023"
 
 function countdown(){
 
-    const newYearsData = new Date(newYears);
+    const newYearsDate = new Date(newYears);
     const currentDate = new Date();
 
-    const totalSeconds = (newYearsDate - currentData) / 1000;
+    const totalSeconds = (newYearsDate - currentDate) / 1000;
 
-    const dias = Math.floor(totalSegundos / 3600 / 3600 / 24);
-    const horas = Math.floor(totalSegundos / 3600) % 24;
-    const mins = Math.floor(totalSegundos / 60) % 60;
+    const days = Math.floor(totalSeconds / 3600 / 3600 / 24);
+    const hours = Math.floor(totalSeconds / 3600) % 24;
+    const mins = Math.floor(totalSeconds / 60) % 60;
     const seconds = Math.floor(totalSeconds) % 60;
+
+    daysE1.innerHTML = days;
+    hoursE1.innerHTML = formatTime(hours);
+    minsE1.innerHTML = formatTime(mins);
+    secondsE1.innerHTML = formatTime(seconds);
+}
     
-    function formatTime(params) {
-        
+    function formatTime(time) {
+        return time < 10 ? `0${time}` : time;
     }
 
-}
+countdown();
+
+setInterval(countdown, 1000);
