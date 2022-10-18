@@ -1,32 +1,25 @@
-const daysE1 = document.getElementById("days");
-const hoursE1 = document.getElementById("hours");
-const minsE1 = document.getElementById("mins");
-const secondsE1 = document.getElementById("seconds");
+var deadline = new Date("dec 30, 2022 00:00:00").getTime();
+  
+var x = setInterval(function() {
+  
+var now = new Date().getTime();
+var t = deadline - now;
 
-const minYears = "1 Jan 2023"
+var days = Math.floor(t / (1000 * 60 * 60 * 24));
+var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((t % (1000 * 60)) / 1000);
 
-function countdown(){
+document.getElementById("dia").innerHTML =days ;
+document.getElementById("hora").innerHTML =hours;
+document.getElementById("minuto").innerHTML = minutes; 
+document.getElementById("segundo").innerHTML =seconds;
 
-    const newYearsDate = new Date(newYears);
-    const currentDate = new Date();
-
-    const totalSeconds = (newYearsDate - currentDate) / 1000;
-
-    const days = Math.floor(totalSeconds / 3600 / 3600 / 24);
-    const hours = Math.floor(totalSeconds / 3600) % 24;
-    const mins = Math.floor(totalSeconds / 60) % 60;
-    const seconds = Math.floor(totalSeconds) % 60;
-
-    daysE1.innerHTML = days;
-    hoursE1.innerHTML = formatTime(hours);
-    minsE1.innerHTML = formatTime(mins);
-    secondsE1.innerHTML = formatTime(seconds);
-}
-    
-    function formatTime(time) {
-        return time < 10 ? `0${time}` : time;
-    }
-
-countdown();
-
-setInterval(countdown, 1000);
+if (t < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "TIME UP";
+        document.getElementById("day").innerHTML ='0';
+        document.getElementById("hour").innerHTML ='0';
+        document.getElementById("minute").innerHTML ='0' ; 
+        document.getElementById("second").innerHTML = '0'; }
+}, 1000);

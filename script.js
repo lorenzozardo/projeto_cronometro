@@ -1,6 +1,6 @@
-var sec=0
-var min=0
-var hr=0
+var segundos=0
+var minutos=0
+var horas=0
 
 var interval
 
@@ -13,8 +13,8 @@ function twoDigits(digit){
 }
 
 function iniciar(){
-    watch()
-    interval= setInterval(watch,16)
+    relogio()
+    interval= setInterval(relogio,17)
 }
 
 function pausar(){
@@ -23,23 +23,23 @@ function pausar(){
 
 function parar(){
     clearInterval(interval)
-    sec=0
-    min=0
-    window.alert("Você parou em: "+document.getElementById('watch').innerText)
-    document.getElementById('watch').innerText='00:00:00'
+    segundos=0
+    minutos=0
+    window.alert("O cronometro parou em: "+document.getElementById('relogio').innerText)
+    document.getElementById('relogio').innerText='00:00:00'
 }
 
-function watch(){
-    sec++
-    if(sec==60){
-        min++
-        sec=0
-        if(min==60){
-            min=0
-            hr++
+function relogio(){
+    segundos++
+    if(segundos==60){
+        minutos++
+        segundos=0
+        if(minutos==60){
+            minutos=0
+            horas++
         }
     }
     
-document.getElementById('watch').innerText=twoDigits(hr)+':'+twoDigits(min)+':'+twoDigits(sec)
+document.getElementById('relogio').innerText=twoDigits(horas)+':'+twoDigits(minutos)+':'+twoDigits(segundos)
 
 }
