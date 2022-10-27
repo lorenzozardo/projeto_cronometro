@@ -2,4 +2,25 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-position: center left;
+    background-size: cover;
+    width: 1200px;
+    height: 700px;
+}
+
+.container .alarm-container{
+    display: flex;
+    
 }
