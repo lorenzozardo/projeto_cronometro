@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.navbar_header{
+    display: inline-block;
+    width: 193vh;
+    height: 50px;
+    padding: 10px 50px;
+    background-color: rgb(72, 72, 72);
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+.navbar_item a{
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    text-transform: none;
+    margin-right: 35px;
+    color: #fff;
+}
+.navbar_item a:hover{
+    padding: 7px;
+    border-radius: 10px;
+    background-color: rgb(191, 131, 0);
+}
+.cronometro{
+    text-align: center;
+    margin: 20px;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+.botao-contagem{
+    background-color: rgb(188, 107, 0);
+}
+#relogio{
+    font-size: 120px;
+    color: black;
+}
+.botoes{
+    margin-bottom: 60px;
+}
+button{
+    height: 100px;
+    width: 300px;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+}
+.iniciar{
+    background-color: rgb(0, 156, 0);
+    margin: 10px;
+}
+.pausar{
+    background-color: rgb(62, 62, 62);
+    margin: 10px;
+}
+.parar{
+    background-color: red;
+    margin: 10px;
+}
