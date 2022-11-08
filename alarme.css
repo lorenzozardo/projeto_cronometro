@@ -43,6 +43,7 @@ body{
 body{
     background-color: #696969;
 }
+
 .alarm-container {
     display: flex;
     align-items: center;
@@ -122,7 +123,7 @@ body{
 }
 
 .container button {
-    width: 430px;
+    width: 410px;
     border: none;
     font-size: 22px;
     font-weight: bolder;
