@@ -1,9 +1,4 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
@@ -11,6 +6,12 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 #menu{
@@ -37,7 +38,7 @@ body{
 }
 
 #menu ul li a:hover {
-    background-color: rgb(24, 139, 233);
+    background-color: #696969;
 }
 
 body{
