@@ -4,54 +4,56 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-.navbar_header{
-    display: inline-block;
-    width: 193vh;
-    height: 50px;
-    padding: 10px 50px;
-    background-color: rgb(72, 72, 72);
-}
-ul{
+* {
+    margin: 0 auto;
     padding: 0;
-    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu{
+    background-color: rgb(37, 37, 39);
+}
+
+#menu ul {
+    max-width: 800px;
     list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 5px;
+    padding: 0;
 }
-.navbar_item a{
-    font-size: 30px;
-    font-weight: bold;
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
     text-decoration: none;
-    text-align: center;
-    text-transform: none;
-    margin-right: 35px;
-    color: #fff;
-}
-.navbar_item a:hover{
-    padding: 7px;
-    border-radius: 10px;
-    background-color: rgb(191, 131, 0);
+    transition: background .4s;
+    font-size: 30px;
 }
 
-.container {
-    background-size: 100%;
-    background-position: center left;
-    width: 1200px;
+#menu ul li a:hover {
+    background-color: rgb(24, 139, 233);
 }
 
+body{
+    background-color: #696969;
+}
 .alarm-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    top: 15%;
+    top: 20%;
     right: 30%;
     width: 450px;
     border-radius: 10px;
     flex-direction: column;
-    background: #333;
+    background: #696969;
     color: #fff;
     margin: 10px;
     padding: 10px;
@@ -120,7 +122,7 @@ ul{
 }
 
 .container button {
-    width: 410px;
+    width: 430px;
     border: none;
     font-size: 22px;
     font-weight: bolder;

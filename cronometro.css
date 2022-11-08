@@ -1,50 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu{
+    background-color: rgb(37, 37, 39);
+}
+
+#menu ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+    font-size: 30px;
+}
+
+#menu ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+
 body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-}
-.navbar_header{
-    display: inline-block;
-    width: 193vh;
-    height: 50px;
-    padding: 10px 50px;
-    background-color: rgb(72, 72, 72);
-}
-ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 5px;
-}
-.navbar_item a{
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    text-transform: none;
-    margin-right: 35px;
-    color: #fff;
-}
-.navbar_item a:hover{
-    padding: 7px;
-    border-radius: 10px;
-    background-color: rgb(191, 131, 0);
+    background-color: #696969;
 }
 .cronometro{
     text-align: center;
     margin: 20px;
     border-radius: 20px;
-    border: 3px solid black;
+    border: 3px solid #fff;
+    margin-top: 5%;
 }
 .botao-contagem{
     background-color: rgb(188, 107, 0);
 }
 #relogio{
     font-size: 120px;
-    color: black;
+    color: #fff;
 }
 .botoes{
     margin-bottom: 60px;
@@ -66,7 +76,7 @@ button:hover{
     margin: 10px;
 }
 .pausar{
-    background-color: rgb(62, 62, 62);
+    background-color: black;
     margin: 10px;
 }
 .parar{

@@ -1,42 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu{
+    background-color: rgb(37, 37, 39);
+}
+
+#menu ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+    font-size: 30px;
+}
+
+#menu ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
 body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-}
-.navbar_header{
-    display: inline-block;
-    width: 193vh;
-    height: 50px;
-    padding: 10px 50px;
-    background-color: rgb(72, 72, 72);
-}
-ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 5px;
-}
-.navbar_item a{
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    text-transform: none;
-    margin-right: 35px;
-    color: #fff;
-}
-.navbar_item a:hover{
-    padding: 7px;
-    border-radius: 10px;
-    background-color: rgb(191, 131, 0);
+    background-color: #696969;
 }
 h1{
     font-weight: bold;
     font-size: 40px;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 h2{
     font-size: 45px;
@@ -55,7 +63,7 @@ form input{
 }
 .contagem{
     font-family: sans-serif;
-    color: #fff;
+    color: black;
     display: inline-block;
     text-align: center;
     font-size: 30px;
@@ -66,7 +74,7 @@ form input{
     padding: 30px;
     font-weight: bold;
     border-radius: 10px;
-    background-color: rgb(65, 65, 65);
+    background-color: #FFF;
     display: inline-block;
 }
 span{
@@ -75,6 +83,5 @@ span{
     font-weight: bold;
     margin-bottom: 20px;
     font-size: 40px;
-    background-color: rgb(55, 55, 55);
     display: inline-block;
 }
