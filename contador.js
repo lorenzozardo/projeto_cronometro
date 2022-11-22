@@ -3,7 +3,7 @@ const minuto = segundo * 60;
 const hora = minuto * 60;
 const dia = hora * 24;
 
-let count_down = new Date('01/01/2023 00:00:00').getTime();
+let count_down = new Date('##/##/#### 00:00:00').getTime();
 let x = setInterval(() => countDown(), segundo);
 
 function countDown() {
