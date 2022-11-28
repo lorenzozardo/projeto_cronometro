@@ -52,8 +52,8 @@ body{
     background-color: rgb(188, 107, 0);
 }
 #relogio{
-    font-size: 120px;
     color: #fff;
+    font-size: 120px;
 }
 .botoes{
     margin-bottom: 60px;
@@ -81,4 +81,10 @@ button:hover{
 .parar{
     background-color: red;
     margin: 10px;
+}
+
+@media screen and (max-width:580px) {
+    #relogio {
+        font-size: 80px;
+    }
 }
