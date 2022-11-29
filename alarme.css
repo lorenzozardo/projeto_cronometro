@@ -14,6 +14,10 @@ body{
     text-align: center;
 }
 
+html, body {
+    height: 100%;
+}
+
 #menu{
     background-color: rgb(37, 37, 39);
 }
@@ -45,20 +49,18 @@ body{
     background-color: #696969;
 }
 
-.alarm-container {
+.container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    top: 20%;
-    right: 30%;
-    width: 450px;
-    border-radius: 10px;
-    flex-direction: column;
+    height: calc(100% - 80.8px);
+    width: 100%;
+}
+
+.alarm-container {
     background: #696969;
     color: #fff;
-    margin: 10px;
-    padding: 10px;
+
 }
 
 .alarm-container img {
