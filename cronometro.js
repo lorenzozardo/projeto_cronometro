@@ -12,14 +12,17 @@ function twoDigits(digit){
     }
 }
 
+// botao de iniciar o cronometro
 function iniciar(){
     relogio()
     interval= setInterval(relogio,17)
 }
+// botao de pausar o cronometro
 
 function pausar(){
     clearInterval(interval)
 }
+// botao de parar o cronometro
 
 function parar(){
     clearInterval(interval)

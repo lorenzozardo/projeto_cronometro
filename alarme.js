@@ -3,7 +3,7 @@ const currentTime = document.querySelector("h1"),
     selectMenu = document.querySelectorAll('select'),
     btnSetAlarm = document.querySelector('button');
 
-
+// mostra as horas, minutos, segundos e se é AM ou PM
 setInterval(() => {
     let date = new Date(),
         hours = date.getHours(),
@@ -21,6 +21,7 @@ setInterval(() => {
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
+// faz o alarme tocar
     currentTime.innerHTML = `${hours}:${minutes}:${seconds} ${ampm}`;
     if (alarmTime === `${hours}:${minutes} ${ampm}`) {
         ringTone.play();
@@ -51,6 +52,7 @@ for (let i = 2; i > 0; i--) {
     selectMenu[2].firstElementChild.insertAdjacentHTML("afterend", option);
 }
 
+// ativa o alarme 
 function setAlarm() {
     if (isAlarmSet) {
         alarmTime = "";
